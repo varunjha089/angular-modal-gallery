@@ -35,11 +35,18 @@ const htmlminOpts = {
 };
 
 export default {
-  entry: 'dist/index.js',
-  dest: 'dist/bundles/angular-modal-gallery.umd.js',
-  sourceMap: false,
-  format: 'umd',
-  moduleName: 'ng.angular.modal.gallery',
+  input: 'dist/index.js',
+  output: {
+    file: 'dist/bundles/angular-modal-gallery.umd.js',
+    sourcemap: false,
+    format: 'umd',
+    name: 'ng.angular.modal.gallery'
+  },
+
+  // other output options specified here will be shared by
+  // all outputs, unless overridden
+  // sourcemap: true,
+
   plugins: [
     angular({
       preprocessors: {
