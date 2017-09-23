@@ -70,6 +70,9 @@ demo/systemjs/**/*.map
 demo/webpack/docs/
 demo/webpack/dll/
 
+demo/universal-angular-cli/dist
+demo/universal-webpack/dist
+
 bundle
 
 docs
